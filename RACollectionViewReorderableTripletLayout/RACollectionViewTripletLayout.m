@@ -189,7 +189,7 @@
         
         CGFloat firstSectionHeight = (_lineSpacing + largeCellHeight);
         CGFloat restSectionsHeight = (lines - 1) * (_lineSpacing + smallCellHeight);
-        sectionHeight += (firstSectionHeight + restSectionsHeight + _sectionSpacing);
+        sectionHeight += (firstSectionHeight + restSectionsHeight);
         if ((cellsCount - 1) % 3 == 0 && (cellsCount - 1) % 6 != 0) {
             sectionHeight -= smallCellHeight + _itemSpacing;
         }
