@@ -16,8 +16,7 @@ RACollectionViewReorderableTripletLayout
 
 
 ## Screen shots
-![screen shot1](https://github.com/ra1028/RACollectionViewReorderableTripletLayout/raw/master/Assets/screenshot1.png)
-![screen shot2](https://github.com/ra1028/RACollectionViewReorderableTripletLayout/raw/master/Assets/screenshot2.png)
+![screen shot1](https://github.com/hvnwnd/RACollectionViewReorderableTripletLayout/raw/master/Assets/screenshot1.png)
 
 
 ## Animation
