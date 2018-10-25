@@ -207,8 +207,12 @@
     CGFloat rightSideSmallCellOriginX = _collectionViewSize.width - _smallCellSize.width - _insets.right - _itemSpacing;
     
     if (indexPath.item == 0) {
-        // first big item
-        attribute.frame = CGRectMake(_insets.left + _itemSpacing, firstLineOriginY, _largeCellSize.width, _largeCellSize.height);
+        // first big item or large cell
+        CGFloat leftSpacing = 0;
+        if (CGSizeEqualToSize([self.delegate collectionView:self.collectionView sizeForLargeItemsInSection:indexPath.section], RACollectionViewTripletLayoutStyleSquare)) {
+            leftSpacing = _itemSpacing;
+        }
+        attribute.frame = CGRectMake(_insets.left + leftSpacing, firstLineOriginY, _largeCellSize.width, _largeCellSize.height);
     } else if (indexPath.item < 3) {
         if (indexPath.item % 2 != 0) {
             // after big item, first line
