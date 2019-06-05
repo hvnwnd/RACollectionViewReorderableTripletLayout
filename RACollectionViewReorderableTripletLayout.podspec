@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "RACollectionViewReorderableTripletLayout"
-  s.version      = "0.1.1"
+  s.version      = "0.1.2"
   s.summary      = "The custom collectionView layout that can perform reordering of cells by dragging it."
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.homepage     = "https://github.com/ra1028"
