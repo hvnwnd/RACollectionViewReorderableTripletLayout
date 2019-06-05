@@ -345,9 +345,7 @@ typedef NS_ENUM(NSInteger, RAScrollDirction) {
     
     //will move
     if ([self.datasource respondsToSelector:@selector(collectionView:itemAtIndexPath:willMoveToIndexPath:)]) {
-        [self.datasource collectionView:self.collectionView itemAtIndexPath:atIndexPath willMoveToIndexPath:toIndexPath];
-        [self.datasource collectionView:self.collectionView itemAtIndexPath:toIndexPath willMoveToIndexPath:atIndexPath];
-        
+        [self.datasource collectionView:self.collectionView itemAtIndexPath:atIndexPath willMoveToIndexPath:toIndexPath];        
     }
     
     //move
@@ -360,7 +358,6 @@ typedef NS_ENUM(NSInteger, RAScrollDirction) {
         //did move
         if ([self.datasource respondsToSelector:@selector(collectionView:itemAtIndexPath:didMoveToIndexPath:)]) {
             [self.datasource collectionView:self.collectionView itemAtIndexPath:atIndexPath didMoveToIndexPath:toIndexPath];
-            [self.datasource collectionView:self.collectionView itemAtIndexPath:toIndexPath didMoveToIndexPath:atIndexPath];
         }
     } completion:nil];
 }
